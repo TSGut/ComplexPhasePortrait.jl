@@ -63,14 +63,14 @@ using ComplexPhasePortrait, ColorSchemes
 
 viridis_colormap = [RGB(c.r, c.g, c.b) for c in ColorSchemes.viridis.colors]
 
-img = portrait(fz, colormap=viridis_colormap)
+img = portrait(fz, PTcgrid, colormap=viridis_colormap)
 ```
 ![viridis colormap](doc/figures/viridis.png)
 
 ```julia
 using ComplexPhasePortrait, Colors
 custom_colormap = [RGB(1.0, 0.0, 0.0), RGB(0.0, 1.0, 0.0), RGB(0.0, 0.0, 1.0)]
-img = portrait(fz, colormap=custom_colormap)
+img = portrait(fz, PTcgrid, colormap=custom_colormap)
 ```
 ![custom colormap](doc/figures/custom_colormap.png)
 
